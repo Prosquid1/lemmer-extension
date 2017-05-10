@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "lemmer",
+        "scope": null,
+        "escapedName": "lemmer",
+        "name": "lemmer",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/ColloDrollo/Documents/GaniNG/gani-fb-messenger/node-bot"
+    ]
+  ],
+  "_from": "lemmer@latest",
+  "_id": "lemmer@0.2.1",
+  "_inCache": true,
+  "_location": "/lemmer",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/lemmer-0.2.1.tgz_1481318348958_0.5631844662129879"
+  },
+  "_npmUser": {
+    "name": "benhjames",
+    "email": "benhjames@sky.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "lemmer",
+    "scope": null,
+    "escapedName": "lemmer",
+    "name": "lemmer",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/lemmer/-/lemmer-0.2.1.tgz",
+  "_shasum": "c3386c682d52d9b7bb9d13d673849693203c8e88",
+  "_shrinkwrap": null,
+  "_spec": "lemmer",
+  "_where": "/Users/ColloDrollo/Documents/GaniNG/gani-fb-messenger/node-bot",
+  "author": {
+    "name": "Rob Ellis"
+  },
+  "bugs": {
+    "url": "https://github.com/silentrob/lemmer/issues"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "lodash": "^4.17.2",
+    "node-wordnet": "^0.1.12"
+  },
+  "description": "Wordnet Lemmer",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.1.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "c3386c682d52d9b7bb9d13d673849693203c8e88",
+    "tarball": "https://registry.npmjs.org/lemmer/-/lemmer-0.2.1.tgz"
+  },
+  "gitHead": "e752785c1fe10e5b6838ef67e12923d891e94afc",
+  "homepage": "https://github.com/silentrob/lemmer#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "benhjames",
+      "email": "benhjames@sky.com"
+    },
+    {
+      "name": "silentrob",
+      "email": "rob@silentrob.me"
+    }
+  ],
+  "name": "lemmer",
+  "optionalDependencies": {},
+  "readme": "# Lemmer\n\nThis is a simple English lemmer library for Node.js using WordNet. \nThis Library is sugar for on top of [validForms](https://github.com/morungos/wordnet#validformsword-callback).\n\nYou can learn more about Lemmatizing words [on WikiPedia](http://en.wikipedia.org/wiki/Lemmatisation);\n\n    npm install lemmer\n\n## Usage\n\n    var Lemmer = require('lemmer');\n    Lemmer.lemmatize('fought', function(err, word){\n      console.log(word); // ['fight']\n    });\n\n    Lemmer.lemmatize(['went','and','bought], function(err, words){\n      console.log(words); // ['go','and','buy']\n    });\n\n## Related\nFore more Node.js NLP check out;\n* [WordNet](https://github.com/morungos/wordnet/)\n* [Natural Node](https://github.com/NaturalNode/natural/) \n\n## License\n\n[The MIT License (MIT)](LICENSE.md)\n\nCopyright © 2015 Rob Ellis",
+  "readmeFilename": "Readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silentrob/lemmer.git"
+  },
+  "scripts": {
+    "test": "mocha test -R spec"
+  },
+  "version": "0.2.1"
+}
